@@ -1,0 +1,52 @@
+# ---
+# - hosts: all
+#   become: true
+#   tasks:
+#     - name: install docker
+#       apt:
+#         name:
+#           - docker
+#     # changer les droits
+# #    - name: change folder rights
+# #      file:
+# #        path: /var/www/html
+# #        mode: '0755'
+# #        state: directory
+#     #module pour copier un fichier
+#     - name: copy file source result
+#       copy:
+#         src: ./../../../TPDocker/result/Dockerfile
+#         #dest: 
+#     - name: copy file source vote
+#       copy:
+#         src: ./../../../TPDocker/vote/Dockerfile
+#         dest: 
+#     - name: copy file source worker
+#       copy:
+#         src: ./../../../TPDocker/worker/Dockerfile
+#         #dest: 
+#     - name: start docker service
+#       service:
+#         name: docker
+#         state: started
+#         enabled: yes   
+
+#     - name: build container image
+#       community.docker.docker_image:
+#         name: node:14-slim
+#         build:
+#           path: 
+#           source: 
+#         state: present
+
+
+
+
+
+#     # module pour activer un service
+# #    - name: start apache2 service
+# #      service:
+# #        name: apache2
+# #        state: started
+# #        enabled: yes
+######
