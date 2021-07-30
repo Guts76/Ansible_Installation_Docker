@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ---
 # - hosts: all
 #   become: true
@@ -50,3 +51,24 @@
 # #        state: started
 # #        enabled: yes
 ######
+=======
+---
+- hosts: all
+  become: true
+  tasks:
+  # - name: update distibution
+  #   apt:
+  #     update_cache: yes
+  # - name: install git
+  #   apt:
+  #     name:
+  #       - git
+  #       - nodejs
+  #       - npm
+  #     update_cache: yes
+  - name: file configuration copy
+    copy: 
+      src: conf/
+      dest: /
+
+>>>>>>> 623bbeef508da0e1ad6792f9f0693e42fae3173d
